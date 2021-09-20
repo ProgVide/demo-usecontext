@@ -1,5 +1,5 @@
 //import logo from './logo.svg';
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import "./App.css";
 import Parent from "./Parent";
 import ValueContext from "./ValueContext";
@@ -7,6 +7,7 @@ import ValueContext from "./ValueContext";
 function App() {
   //let [number, setNumber] = useState(45);
   let value = useState(48);
+
   return (
     <ValueContext.Provider value={value}>
       <div>
